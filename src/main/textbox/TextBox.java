@@ -48,7 +48,7 @@ public class TextBox implements Displayable {
 	}
 
 	public void setText(String text){
-		textList[2]= text;
+		textList[textList.length-1]= text;
 	}
 	
 

@@ -1,7 +1,7 @@
 package main;
 
 
-import main.Controller.Controller;
+import main.controller.Controller;
 import main.commons.*;
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -23,5 +23,10 @@ public class demoPubSubSystem extends PApplet {
 		image(Background, 0, 0);
 		
 		controller.display();
+	}
+
+
+	public static void main(String args[]){
+	    PApplet.main(new String[] { "--present", "main.demoPubSubSystem" });
 	}
 }
